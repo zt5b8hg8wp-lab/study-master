@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    background:#F7F2EA;
+    color:#4A3B2A;
+}
+
+.container{
+    max-width:600px;
+    margin:auto;
+    padding:20px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.header h1{
+    font-size:2rem;
+    color:#8B6B4A;
+}
+
+.header p{
+    color:#7A6650;
+}
+
+.timer-card,
+.subject-card,
+.goal-card,
+.pomodoro-card,
+.stats-card,
+.calendar-card,
+.darkmode-card{
+    background:white;
+    padding:20px;
+    border-radius:18px;
+    margin-bottom:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+#timer{
+    font-size:3rem;
+    text-align:center;
+    margin:20px 0;
+    font-weight:bold;
+    color:#8B6B4A;
+}
+
+.timer-buttons{
+    display:flex;
+    gap:10px;
+}
+
+button{
+    flex:1;
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+#startBtn{
+    background:#8B6B4A;
+    color:white;
+}
+
+#pauseBtn{
+    background:#D89B5B;
+    color:white;
+}
+
+#resetBtn{
+    background:#B95E4A;
+    color:white;
+}
+
+#subjectSelect,
+#goalInput{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+#saveGoal{
+    margin-top:10px;
+    background:#8B6B4A;
+    color:white;
+}
+
+#goalStatus{
+    margin-top:10px;
+}
+
+#pomodoroDisplay{
+    text-align:center;
+    font-size:2.5rem;
+    margin:15px 0;
+}
+
+#pomodoroStart{
+    background:#D89B5B;
+    color:white;
+}
+
+#calendar{
+    min-height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#888;
+}
+
+#darkModeBtn{
+    background:#222;
+    color:white;
+}
+
+.dark{
+    background:#1A1A1A;
+    color:#EEE;
+}
+
+.dark .timer-card,
+.dark .subject-card,
+.dark .goal-card,
+.dark .pomodoro-card,
+.dark .stats-card,
+.dark .calendar-card,
+.dark .darkmode-card{
+    background:#2A2A2A;
+    color:white;
+}
