@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Master</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#8B6B4A">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="header">
+<h1>📚 Study Master</h1>
+<p>스터디카페 감성 공부 관리</p>
+</header>
+
+<section class="timer-card">
+
+<h2>오늘 공부시간</h2>
+
+<div id="timer">
+00:00:00
+</div>
+
+<div class="timer-buttons">
+
+<button id="startBtn">
+공부 시작
+</button>
+
+<button id="pauseBtn">
+일시정지
+</button>
+
+<button id="resetBtn">
+초기화
+</button>
+
+</div>
+
+</section>
+
+<section class="subject-card">
+
+<h2>현재 과목</h2>
+
+<select id="subjectSelect">
+
+<option>수학</option>
+<option>영어</option>
+<option>국어</option>
+<option>과학</option>
+<option>사회</option>
+
+</select>
+
+</section>
+
+<section class="goal-card">
+
+<h2>오늘 목표</h2>
+
+<input
+type="number"
+id="goalInput"
+placeholder="시간 입력">
+
+<button id="saveGoal">
+목표 저장
+</button>
+
+<div id="goalStatus">
+목표 미설정
+</div>
+
+</section>
+
+<section class="pomodoro-card">
+
+<h2>🍅 포모도로</h2>
+
+<div id="pomodoroDisplay">
+25:00
+</div>
+
+<button id="pomodoroStart">
+포모도로 시작
+</button>
+
+</section>
+
+<section class="stats-card">
+
+<h2>📊 통계</h2>
+
+<canvas id="subjectChart">
+</canvas>
+
+</section>
+
+<section class="calendar-card">
+
+<h2>📅 공부 기록</h2>
+
+<div id="calendar">
+
+캘린더 영역
+
+</div>
+
+</section>
+
+<section class="darkmode-card">
+
+<button id="darkModeBtn">
+🌙 다크모드
+</button>
+
+</section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
